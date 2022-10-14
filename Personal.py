@@ -1,5 +1,5 @@
 import streamlit as st
-from streamlit_lottie import st_lottie
+#from streamlit_lottie import st_lottie
 import json
 
 st.set_page_config(page_title="Emmanuel_Resume", page_icon=":book:", layout="wide")
@@ -55,7 +55,8 @@ with st.container():
               )
     
     with col_ini_der:
-        st_lottie(hola, height=300, key="hola")
+        st.write("")
+#        st_lottie(hola, height=300, key="hola")
     
 # -----------------------------------------------------------------------
 # ULTIMA PARTE - FORMULARIO DE CONTACTO
