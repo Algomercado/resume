@@ -1,0 +1,23 @@
+'''
+# ESTA FUNCIÓN LEE LOS ARCHIVOS LOTTIER DESDE UN ARCHIVO EN EL DISCO
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+hola = load_lottiefile("lottiefiles/hola.json")
+ingeniero = load_lottiefile("lottiefiles/ingeniero.json")
+
+# VER DOCUMENTACIÓN DE STRAMLIT-LOTTIE
+st_lottie(
+    hola,
+    speed=1,
+    reverse=False,
+    loop=True,
+    quality="low", #medium , high
+    renderer="svg",
+    height=None,
+    width=None,
+    key=None,
+)
+
+'''
