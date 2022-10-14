@@ -1,7 +1,6 @@
 import streamlit as st
 from streamlit_lottie import st_lottie
-from PIL import Image
-import requests
+import json
 
 st.set_page_config(page_title="Emmanuel_Resume", page_icon=":book:", layout="wide")
 
@@ -14,14 +13,11 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code !=200:
-        return None
-    return r.json()
+def load_lottiefile(filepath:str):
+    with open(filepath, "r") as f:
+        return json.load(f)
 
-img_trabajo = Image.open("imagenes/01.png")
-ingenieria = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_f8arnpdn.json")
+ingenieria = load_lottiefile("lottiefiles/ingeniero.json")
 
 with st.container():
     col_izq, col_der = st.columns(2)

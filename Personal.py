@@ -1,20 +1,25 @@
-import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
-from PIL import Image
+import json
 
 st.set_page_config(page_title="Emmanuel_Resume", page_icon=":book:", layout="wide")
 
 # ESTA FUNCIÓN LEE LOS ARCHIVOS LOTTIE DIRECTAMENTE DE LA WEB
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+#def load_lottieurl(url):
+#    r = requests.get(url)
+#    if r.status_code != 200:
+#        return None
+#    return r.json()
 
+def load_lottiefile(filepath:str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+hola = load_lottiefile("lottiefiles/hola.json")
+        
 #computacion = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_w51pcehl.json")
-ingenieria = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_f8arnpdn.json")
-hola = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_wtpprtnc.json")
+#ingenieria = load_lottieurl("https://assets6.lottiefiles.com/packages/lf20_f8arnpdn.json")
+#hola = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_wtpprtnc.json")
 #data_science = load_lottieurl("https://assets3.lottiefiles.com/private_files/lf30_8z6ubjgk.json")
 #graficas = load_lottieurl("https://assets3.lottiefiles.com/packages/lf20_q5qeoo3q.json")
 #linkedin = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_ijoepf55.json")
