@@ -22,25 +22,27 @@ computacion = load_lottiefile("lottiefiles/computer.json")
 with st.container():
     col_izq, col_der = st.columns(2)
     with col_izq:
-        st. header("Proyectos Personales")
-        st.subheader("Finanzas con Python")
+        st. header("Personal Projects")
+        st.subheader("Finance with Python")
         
     with col_der:
         st_lottie(computacion, height=200, key="ing")
 
 st.write("---")
 st.write("""
-        - Conexión a mercado mediante API.
-        - Registro en DDBB en red local (Postgresql / MariaDB / SQLite).
-        - Análisis de estrategias varias y envío de señal a Telegram.
-        - Bot arbitrador de bonos.
-        - Registro en Googlesheet para seguimiento y/o envío por email.
-        - Optimización de Portafolios.
-        - Control de versión con GitHub.
+        - Market connection via API.
+        - DDBB registration in local network (Postgresql / MariaDB / SQLite).
+        - Strategy analysis and signal sending to Telegram.
+        - Bonus arbitrator bot.
+        - Registration in Googlesheet for follow up or sending by email.
+        - Portfolio Optimization.
+        - Version control with GitHub.
+        - web Frameworks (Flask / FastAPI)
          """)
 st.write("##")
 st.write("""
-         *Aprendiendo ...*
+         *Learning ...*
         - Machine Learning.
-        - Estrategias de opciones.
+        - Options Strategy.
+        - Cloud service.
          """)

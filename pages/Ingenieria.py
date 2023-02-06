@@ -22,7 +22,7 @@ ingenieria = load_lottiefile("lottiefiles/ingeniero.json")
 with st.container():
     col_izq, col_der = st.columns(2)
     with col_izq:
-        st. header("Experiencia Laboral")
+        st. header("Work Experience")
         
     with col_der:
         st_lottie(ingenieria, height=200, key="ing")
@@ -36,72 +36,70 @@ tab1, tab2, tab3, tab4 = st.tabs(["Pan American Silver",
 with tab1:
     st.subheader("2016 - ")
     st.write("##")
-    st.header("Experiencia")
-    with st.expander("Jefe Eléctrico Mina Subterranea"):
+    st.header("Experience")
+    with st.expander("Underground Mine Electrical Chief"):
         st.write("""
-        - Gestionar las actividades de mantenimiento de los sistemas de distribución eléctrica en media y baja tensión en mina.
-        - Velar por la seguridad y desarrollo del personal.
-        - Gestionar la disponibilidad de energía a futuros desarrollos.
-        - Administrar el proceso de mantenimientos mediante gestión de KPI.
-        - Asegurar que todos los grupos de trabajo bajo su control trabajen dentro de las pautas requeridas por la empresa, asegurando un lugar de trabajo seguro y eficiente.
-        - Detectar las competencias y la motivación del equipo para lograr el desarrollo individual mejorando el desempeño del área.
-        - Asegurar el cumplimiento de los objetivos del área administradas bajo mi responsabilidad.
+        - Manage the maintenance activities of the electrical distribution systems in medium and low voltage in the mine.
+        - Ensure the safety and development of staff.
+        - Manage the availability of energy for future developments.
+        - Manage the maintenance process through KPI management.
+        - Ensure that all work groups work within the guidelines required by the company, ensuring a safe and efficient workplace.
+        - Detect the skills and motivation of the team to achieve individual development, improving the performance of the area.
+        - Ensure compliance with the objectives of the area managed under my responsibility.
     """)
-    with st.expander("Ingeniero Mantenimiento Mina Subterranea"):
+    with st.expander("Underground Mine Maintenance Engineer"):
         st.write("""
-        - Planificar, coordinar y controlar el mantenimiento eléctrico y mecánico de dos nuevos proyectos mineros en fase de desarrollo.
-        - Optimizar los recursos para cumplir con los objetivos de área y de la empresa.
-        - Elaboración y seguimiento de cronograma.
-        - Generar reportes diarios de indicadores de gestión.
-        - Administrar las actividades y el desempeño diario del grupo de trabajo.
-        - Realizar análisis por flota de disponibilidad, MTBS, MTTR.
-        - Administrar el volumen de trabajo de la planificación semanal con un mínimo de tiempo de inactividad o de pérdidas de producción.
-        - Minimizar las demoras en la operación.
+        - Plan, coordinate and control the electrical and mechanical maintenance of two new mining projects under development.
+        - Optimize resources to accomplish area and company objectives.
+        - Preparation and follow up of schedule.
+        - Generate daily reports of management indicators.
+        - Manage the daily activities and performance of the workgroup.
+        - Perform analysis by fleet availability, MTBS, MTTR.
+        - Minimize delays in the operation.
     """)
-    with st.expander("Supervisor Instrumentación"):
+    with st.expander("Instrumentation Supervisor"):
         st.write("""
-        - Personal a cargo: 3 personas
-        - Gestión de activos
-        - Control de planificación semanal del área
-        - Confección e incorporación de planillas típicas a planificación.
-        - Gestión y control de tareas en parada de planta.
+        - Asset Management.
+        - Area weekly planning control.
+        - Preparation and incorporation of typical spreadsheets to planning.
+        - Management and control of plant shutdown tasks.
     """)
-    with st.expander("Instrumentista"):
+    with st.expander("Instrumentalist"):
         st.write("""
-        - Mantenimiento general de instrumentos.
-        - Programación de PLC Rockwell, Incorporación de nodos Devicenet.
-        - Parametrización de E3 y variadores PowerFlex.
-        - Incorporación de línea de finos al sistema de control, Programación y SCADA.
+        - General instrument maintenance.
+        - Rockwell PLC Programming, Devicenet Node Onboarding.
+        - Parameterization of E3 and PowerFlex drives.
+        - Incorporation of the fine line to the control system, programming and SCADA.
     """)
 
 
 with tab2:
     st.subheader("2013 - 2017")
     st.write("##")
-    st.subheader("Socio - Ingeniería Eléctrica")
+    st.subheader("Partner - Electrical Engineering")
     st.write("""
-             - Provisión de ingeniería eléctrica básica y de detalle, programación PLC y SCADA para proyectos varios en Cementos Avelaneda S.A.
-             - Cálculo de inversión y anteproyecto eléctrico para la puesta en marcha de las instalaciones de una fábrica de cemento de vía húmeda. 
-             - Automatización del sistema de emboquillado para embolsadoras de harina Molinos Cañuelas S.A. y Molinos Victoria S.A
+             - Provision of basic and detailed electrical engineering, PLC and SCADA programming for various projects at Cementos Avelaneda S.A.
+             - Investment calculation and electrical preliminary project for the start-up of the facilities of a wet cement factory. 
+             - Automation of the capping system for flour bagging machines at Molinos Cañuelas S.A. y Molinos Victoria S.A
              """)
 
 with tab3:
     st.subheader("2010 - 2013")
     st.write("##")
-    st.subheader("Ingeniero de Proyectos Eléctricos")
+    st.subheader("Electrical Project Engineer")
     st.write("""
-             *Proyectos Varios*
-             - Conversión, actualización y migración SCADA iFIX de la planta.
-             - Ing. Básica, de detalle y programación para instalaciones varias.
-             - Supervición de obra.
+             *Miscellaneous Projects*
+             - Plant SCADA iFIX conversion, upgrade and migration.
+             - Basic, detailed and programming engineering for various installations.
+             - Construction supervision.
              """)
 
 with tab4:
     st.subheader("2008 - 2010")
     st.write("##")
-    st.subheader("Cadista - Proyectos Mecánicos")
+    st.subheader("Mechanical Projects")
     st.write("""
-             *Proyectos Varios*
-             - Planos de implantación general, desarrollo y cálculo básico mecánico, detalles y despieces aptos para construir.
-             - Planos de detalle y despiece de sinfin, bandas transportadoras, tolvas, descargas, compensadores, estructuras metálicas, resbaladeras, etc.
+             *Miscellaneous Projects*
+             - General implementation plans, development and basic mechanical calculation, details and exploded views suitable for construction.
+             - Detail and exploded views of screw, conveyor belts, hoppers, discharges, compensators, metal structures, slides, etc.
              """)

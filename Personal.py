@@ -37,22 +37,33 @@ local_css("style/style.css")
 with st.container():
     col_ini_iz, col_ini_der = st.columns([2,1])
     with col_ini_iz:
-        st.title(":wave: Hola! soy Emmanuel")
+        st.title(":wave: Hey There, I'm Emmanuel")
         st.write("##")
-        st.header("Ing. Electromecánico")
-        st.write("""Argentino | 40 años | Casado | Dos Hijos""")
-        st.write("Profesional, orientado a la obtención de resultados mediante la organización, mejora de procesos, eficiencia y seguridad. "+
-                 "Con habilidades en gestión y conducción de equipos de trabajo")
-        st.write("Aficionado al desarrollo backend con Python orientado en finanzas")
+        st.header("Eng. Electromechanical")
+        st.write("""Argentinian | 40 years | Married""")
+        st.write("Professional, oriented to obtaining results through organization, process improvement, efficiency and safety. "+
+                 "With skills in managing and leading work teams")
+        st.write("Learning backend development with finance oriented Python")
         st.markdown("**email:** emmanueldeloinaz@gmail.com")
         st.write("[LinkedIn >](https://www.linkedin.com/in/emmanuel-de-loinaz-57747265/)")
-        
+
+    st.write("##")
+    st.write("English")   
+    with open("resume_eng.pdf", "rb") as file:
+            btn = st.download_button(
+                label="Download Resume",
+                data=file,
+                file_name="Resume_Emmanuel.pdf"
+              )
+    st.write("##")
+    st.write("Español")
     with open("resume.pdf", "rb") as file:
             btn = st.download_button(
                 label="Descarga CV",
                 data=file,
-                file_name="Resume_Emmanuel.pdf"
+                file_name="CV_Emmanuel.pdf"
               )
+
     
     with col_ini_der:
         st_lottie(hola, height=300, key="hola")
@@ -63,39 +74,36 @@ with st.container():
 
 with st.container():
     st.write("---")
-    st.header (":mortar_board: Educación")
+    st.header (":mortar_board: Studies")
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("<h4>ENET N°2 Olavarría Bs.As.</h4>", unsafe_allow_html=True)
-        st.write("Técnico Mecánico Electricista")
         st.markdown("<h4>UNICEN Olavarría</h4>", unsafe_allow_html=True)
-        st.write("Ingeniero Electromecánico")
+        st.write("Electromechanical Engineer")
         st.markdown("<h4>AUSTRAL Pilar Bs.As.</h4>", unsafe_allow_html=True)
-        st.write("Diplomatura en gestión de activos y mantenimiento")
+        st.write("Diploma in Asset Management and Maintenance")
         st.write("##")
-        st.markdown("<h4>ARN Autoridad Regulatoria Nuclear</h4>", unsafe_allow_html=True)
-        st.write("Habilitación para el uso de radioisótopos")
-        st.write("##")
-        st.write("Ingles Avanzado")
+        st.markdown("<h4>ARN Nuclear Regulatory Authority</h4>", unsafe_allow_html=True)
+        st.write("Authorization for the use of radioisotopes")
+
     with col2:
-        st.markdown("<h4>Bolsa de Comercio Bs.As.</h4>", unsafe_allow_html=True)
-        st.write("Instrumento de Inversión")
+        st.markdown("<h4>Stock Exchange Bs.As.</h4>", unsafe_allow_html=True)
+        st.write("Investment Instrument")
         st.markdown("<h4>Ruben J. Ullua</h4>", unsafe_allow_html=True)
-        st.write("Python para Traders (Básico/Intermedio/Avanzado)")
+        st.write("Python for Traders (Basic/Intermediate/Advanced)")
 
 
 
 with st.container():
     st.write("---")
-    st.header(":mailbox: Contactame!") # Get in touch with me!
+    st.header(":mailbox: Contact Me!") # Get in touch with me!
     st.write("##")
 
 contact_form = """
     <form id="contactform" action="https://formsubmit.io/send/algomercados@gmail.com" method="POST">
     <input name="_captcha" type="hidden" value="false">
-    <input name="name" type="text" id="name" placeholder="Nombre .." required>
+    <input name="name" type="text" id="name" placeholder="Name .." required>
     <input name="email" type="email" id="email" placeholder="Email .." required>
-    <textarea name="comment" id="comment" rows="3" placeholder="Aqui tu mensaje .."></textarea>
+    <textarea name="comment" id="comment" rows="3" placeholder="Here your message .."></textarea>
     <input name="_formsubmit_id" type="text" style="display:none">
     <input value="Enviar" type="submit">
     </form>
