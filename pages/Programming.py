@@ -29,11 +29,12 @@ with st.container():
         st_lottie(computacion, height=200, key="ing")
 
 st.write("---")
+st.markdown("- ETL application of an instrument for measuring electrical parameters  [_check this link_](https://me435-registro.streamlit.app/) ")
 st.write("""
         - Market connection via API.
         - DDBB registration in local network (Postgresql / MariaDB / SQLite).
-        - Strategy analysis and signal sending to Telegram.
-        - Bonus arbitrator bot.
+        - Strategy analysis and signal sending to Telegram running on Oracle Cloud Service.
+        - Bonus arbitrator bot running on Oracle Cloud Service.
         - Registration in Googlesheet for follow up or sending by email.
         - Portfolio Optimization.
         - Version control with GitHub.
