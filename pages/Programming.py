@@ -30,6 +30,7 @@ with st.container():
 
 st.write("---")
 st.markdown("- ETL application of an instrument for measuring electrical parameters  [_check this link_](https://me435-registro.streamlit.app/) ")
+st.markdown("- Telegram Bot hosting on Oracle Cloud  [_check this link_](https://t.me/AlgoMercado_bot) ")
 st.write("""
         - Market connection via API.
         - DDBB registration in local network (Postgresql / MariaDB / SQLite).
